@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44037DFC277C53AB00C5831F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037DFB277C53AB00C5831F /* AppDelegate.swift */; };
+		44037DFE277C53AB00C5831F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037DFD277C53AB00C5831F /* SceneDelegate.swift */; };
+		44037E00277C53AB00C5831F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037DFF277C53AB00C5831F /* ViewController.swift */; };
+		44037E03277C53AB00C5831F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44037E01277C53AB00C5831F /* Main.storyboard */; };
+		44037E06277C53AB00C5831F /* GFCohesionT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44037E04277C53AB00C5831F /* GFCohesionT.xcdatamodeld */; };
+		44037E08277C53AE00C5831F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44037E07277C53AE00C5831F /* Assets.xcassets */; };
+		44037E0B277C53AE00C5831F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44037E09277C53AE00C5831F /* LaunchScreen.storyboard */; };
+		44037E16277C53AE00C5831F /* GFCohesionTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E15277C53AE00C5831F /* GFCohesionTTests.swift */; };
+		44037E20277C53AE00C5831F /* GFCohesionTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E1F277C53AE00C5831F /* GFCohesionTUITests.swift */; };
+		44037E22277C53AF00C5831F /* GFCohesionTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E21277C53AF00C5831F /* GFCohesionTUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44037E12277C53AE00C5831F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44037DF0277C53AA00C5831F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44037DF7277C53AA00C5831F;
+			remoteInfo = GFCohesionT;
+		};
+		44037E1C277C53AE00C5831F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44037DF0277C53AA00C5831F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44037DF7277C53AA00C5831F;
+			remoteInfo = GFCohesionT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44037DF8277C53AB00C5831F /* GFCohesionT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFCohesionT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44037DFB277C53AB00C5831F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44037DFD277C53AB00C5831F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		44037DFF277C53AB00C5831F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44037E02277C53AB00C5831F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44037E05277C53AB00C5831F /* GFCohesionT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GFCohesionT.xcdatamodel; sourceTree = "<group>"; };
+		44037E07277C53AE00C5831F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44037E0A277C53AE00C5831F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44037E0C277C53AE00C5831F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44037E11277C53AE00C5831F /* GFCohesionTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GFCohesionTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44037E15277C53AE00C5831F /* GFCohesionTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFCohesionTTests.swift; sourceTree = "<group>"; };
+		44037E1B277C53AE00C5831F /* GFCohesionTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GFCohesionTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44037E1F277C53AE00C5831F /* GFCohesionTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFCohesionTUITests.swift; sourceTree = "<group>"; };
+		44037E21277C53AF00C5831F /* GFCohesionTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFCohesionTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44037DF5277C53AA00C5831F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44037E0E277C53AE00C5831F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44037E18277C53AE00C5831F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44037DEF277C53AA00C5831F = {
+			isa = PBXGroup;
+			children = (
+				44037DFA277C53AB00C5831F /* GFCohesionT */,
+				44037E14277C53AE00C5831F /* GFCohesionTTests */,
+				44037E1E277C53AE00C5831F /* GFCohesionTUITests */,
+				44037DF9277C53AB00C5831F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44037DF9277C53AB00C5831F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44037DF8277C53AB00C5831F /* GFCohesionT.app */,
+				44037E11277C53AE00C5831F /* GFCohesionTTests.xctest */,
+				44037E1B277C53AE00C5831F /* GFCohesionTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44037DFA277C53AB00C5831F /* GFCohesionT */ = {
+			isa = PBXGroup;
+			children = (
+				44037DFB277C53AB00C5831F /* AppDelegate.swift */,
+				44037DFD277C53AB00C5831F /* SceneDelegate.swift */,
+				44037DFF277C53AB00C5831F /* ViewController.swift */,
+				44037E01277C53AB00C5831F /* Main.storyboard */,
+				44037E07277C53AE00C5831F /* Assets.xcassets */,
+				44037E09277C53AE00C5831F /* LaunchScreen.storyboard */,
+				44037E0C277C53AE00C5831F /* Info.plist */,
+				44037E04277C53AB00C5831F /* GFCohesionT.xcdatamodeld */,
+			);
+			path = GFCohesionT;
+			sourceTree = "<group>";
+		};
+		44037E14277C53AE00C5831F /* GFCohesionTTests */ = {
+			isa = PBXGroup;
+			children = (
+				44037E15277C53AE00C5831F /* GFCohesionTTests.swift */,
+			);
+			path = GFCohesionTTests;
+			sourceTree = "<group>";
+		};
+		44037E1E277C53AE00C5831F /* GFCohesionTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44037E1F277C53AE00C5831F /* GFCohesionTUITests.swift */,
+				44037E21277C53AF00C5831F /* GFCohesionTUITestsLaunchTests.swift */,
+			);
+			path = GFCohesionTUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44037DF7277C53AA00C5831F /* GFCohesionT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44037E25277C53AF00C5831F /* Build configuration list for PBXNativeTarget "GFCohesionT" */;
+			buildPhases = (
+				44037DF4277C53AA00C5831F /* Sources */,
+				44037DF5277C53AA00C5831F /* Frameworks */,
+				44037DF6277C53AA00C5831F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GFCohesionT;
+			productName = GFCohesionT;
+			productReference = 44037DF8277C53AB00C5831F /* GFCohesionT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44037E10277C53AE00C5831F /* GFCohesionTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44037E28277C53AF00C5831F /* Build configuration list for PBXNativeTarget "GFCohesionTTests" */;
+			buildPhases = (
+				44037E0D277C53AE00C5831F /* Sources */,
+				44037E0E277C53AE00C5831F /* Frameworks */,
+				44037E0F277C53AE00C5831F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44037E13277C53AE00C5831F /* PBXTargetDependency */,
+			);
+			name = GFCohesionTTests;
+			productName = GFCohesionTTests;
+			productReference = 44037E11277C53AE00C5831F /* GFCohesionTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44037E1A277C53AE00C5831F /* GFCohesionTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44037E2B277C53AF00C5831F /* Build configuration list for PBXNativeTarget "GFCohesionTUITests" */;
+			buildPhases = (
+				44037E17277C53AE00C5831F /* Sources */,
+				44037E18277C53AE00C5831F /* Frameworks */,
+				44037E19277C53AE00C5831F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44037E1D277C53AE00C5831F /* PBXTargetDependency */,
+			);
+			name = GFCohesionTUITests;
+			productName = GFCohesionTUITests;
+			productReference = 44037E1B277C53AE00C5831F /* GFCohesionTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44037DF0277C53AA00C5831F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					44037DF7277C53AA00C5831F = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					44037E10277C53AE00C5831F = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 44037DF7277C53AA00C5831F;
+					};
+					44037E1A277C53AE00C5831F = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 44037DF7277C53AA00C5831F;
+					};
+				};
+			};
+			buildConfigurationList = 44037DF3277C53AA00C5831F /* Build configuration list for PBXProject "GFCohesionT" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44037DEF277C53AA00C5831F;
+			productRefGroup = 44037DF9277C53AB00C5831F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44037DF7277C53AA00C5831F /* GFCohesionT */,
+				44037E10277C53AE00C5831F /* GFCohesionTTests */,
+				44037E1A277C53AE00C5831F /* GFCohesionTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44037DF6277C53AA00C5831F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44037E0B277C53AE00C5831F /* LaunchScreen.storyboard in Resources */,
+				44037E08277C53AE00C5831F /* Assets.xcassets in Resources */,
+				44037E03277C53AB00C5831F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44037E0F277C53AE00C5831F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44037E19277C53AE00C5831F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44037DF4277C53AA00C5831F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44037E00277C53AB00C5831F /* ViewController.swift in Sources */,
+				44037E06277C53AB00C5831F /* GFCohesionT.xcdatamodeld in Sources */,
+				44037DFC277C53AB00C5831F /* AppDelegate.swift in Sources */,
+				44037DFE277C53AB00C5831F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44037E0D277C53AE00C5831F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44037E16277C53AE00C5831F /* GFCohesionTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44037E17277C53AE00C5831F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44037E22277C53AF00C5831F /* GFCohesionTUITestsLaunchTests.swift in Sources */,
+				44037E20277C53AE00C5831F /* GFCohesionTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44037E13277C53AE00C5831F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44037DF7277C53AA00C5831F /* GFCohesionT */;
+			targetProxy = 44037E12277C53AE00C5831F /* PBXContainerItemProxy */;
+		};
+		44037E1D277C53AE00C5831F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44037DF7277C53AA00C5831F /* GFCohesionT */;
+			targetProxy = 44037E1C277C53AE00C5831F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44037E01277C53AB00C5831F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44037E02277C53AB00C5831F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44037E09277C53AE00C5831F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44037E0A277C53AE00C5831F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44037E23277C53AF00C5831F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44037E24277C53AF00C5831F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44037E26277C53AF00C5831F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6G6XD32457;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GFCohesionT/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rst.cohesion.com.GFCohesionT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44037E27277C53AF00C5831F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6G6XD32457;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GFCohesionT/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rst.cohesion.com.GFCohesionT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		44037E29277C53AF00C5831F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6G6XD32457;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rst.cohesion.com.GFCohesionTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GFCohesionT.app/GFCohesionT";
+			};
+			name = Debug;
+		};
+		44037E2A277C53AF00C5831F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6G6XD32457;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rst.cohesion.com.GFCohesionTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GFCohesionT.app/GFCohesionT";
+			};
+			name = Release;
+		};
+		44037E2C277C53AF00C5831F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6G6XD32457;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rst.cohesion.com.GFCohesionTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GFCohesionT;
+			};
+			name = Debug;
+		};
+		44037E2D277C53AF00C5831F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6G6XD32457;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rst.cohesion.com.GFCohesionTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GFCohesionT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44037DF3277C53AA00C5831F /* Build configuration list for PBXProject "GFCohesionT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44037E23277C53AF00C5831F /* Debug */,
+				44037E24277C53AF00C5831F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44037E25277C53AF00C5831F /* Build configuration list for PBXNativeTarget "GFCohesionT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44037E26277C53AF00C5831F /* Debug */,
+				44037E27277C53AF00C5831F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44037E28277C53AF00C5831F /* Build configuration list for PBXNativeTarget "GFCohesionTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44037E29277C53AF00C5831F /* Debug */,
+				44037E2A277C53AF00C5831F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44037E2B277C53AF00C5831F /* Build configuration list for PBXNativeTarget "GFCohesionTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44037E2C277C53AF00C5831F /* Debug */,
+				44037E2D277C53AF00C5831F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		44037E04277C53AB00C5831F /* GFCohesionT.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				44037E05277C53AB00C5831F /* GFCohesionT.xcdatamodel */,
+			);
+			currentVersion = 44037E05277C53AB00C5831F /* GFCohesionT.xcdatamodel */;
+			path = GFCohesionT.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 44037DF0277C53AA00C5831F /* Project object */;
+}
