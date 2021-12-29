@@ -17,6 +17,8 @@
 		44037E16277C53AE00C5831F /* GFCohesionTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E15277C53AE00C5831F /* GFCohesionTTests.swift */; };
 		44037E20277C53AE00C5831F /* GFCohesionTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E1F277C53AE00C5831F /* GFCohesionTUITests.swift */; };
 		44037E22277C53AF00C5831F /* GFCohesionTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E21277C53AF00C5831F /* GFCohesionTUITestsLaunchTests.swift */; };
+		44037E2F277C54D400C5831F /* GFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E2E277C54D400C5831F /* GFController.swift */; };
+		44037E30277C54D400C5831F /* GFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E2E277C54D400C5831F /* GFController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,7 @@
 		44037E1B277C53AE00C5831F /* GFCohesionTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GFCohesionTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44037E1F277C53AE00C5831F /* GFCohesionTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFCohesionTUITests.swift; sourceTree = "<group>"; };
 		44037E21277C53AF00C5831F /* GFCohesionTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFCohesionTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		44037E2E277C54D400C5831F /* GFController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 				44037DFB277C53AB00C5831F /* AppDelegate.swift */,
 				44037DFD277C53AB00C5831F /* SceneDelegate.swift */,
 				44037DFF277C53AB00C5831F /* ViewController.swift */,
+				44037E2E277C54D400C5831F /* GFController.swift */,
 				44037E01277C53AB00C5831F /* Main.storyboard */,
 				44037E07277C53AE00C5831F /* Assets.xcassets */,
 				44037E09277C53AE00C5831F /* LaunchScreen.storyboard */,
@@ -261,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44037E2F277C54D400C5831F /* GFController.swift in Sources */,
 				44037E00277C53AB00C5831F /* ViewController.swift in Sources */,
 				44037E06277C53AB00C5831F /* GFCohesionT.xcdatamodeld in Sources */,
 				44037DFC277C53AB00C5831F /* AppDelegate.swift in Sources */,
@@ -273,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44037E16277C53AE00C5831F /* GFCohesionTTests.swift in Sources */,
+				44037E30277C54D400C5831F /* GFController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +457,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,6 +486,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
