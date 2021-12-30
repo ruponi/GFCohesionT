@@ -19,6 +19,14 @@
 		44037E22277C53AF00C5831F /* GFCohesionTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E21277C53AF00C5831F /* GFCohesionTUITestsLaunchTests.swift */; };
 		44037E2F277C54D400C5831F /* GFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E2E277C54D400C5831F /* GFController.swift */; };
 		44037E30277C54D400C5831F /* GFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E2E277C54D400C5831F /* GFController.swift */; };
+		44037E32277E14D900C5831F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E31277E14D900C5831F /* APIManager.swift */; };
+		44037E33277E14D900C5831F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E31277E14D900C5831F /* APIManager.swift */; };
+		44037E36277E30A000C5831F /* DataLayerCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E35277E30A000C5831F /* DataLayerCD.swift */; };
+		44037E37277E30A000C5831F /* DataLayerCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E35277E30A000C5831F /* DataLayerCD.swift */; };
+		44037E4B277E61F500C5831F /* DataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E4A277E61F500C5831F /* DataStructures.swift */; };
+		44037E4C277E61F500C5831F /* DataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E4A277E61F500C5831F /* DataStructures.swift */; };
+		44037E4E277E63C700C5831F /* DataLayerPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E4D277E63C700C5831F /* DataLayerPT.swift */; };
+		44037E4F277E63C700C5831F /* DataLayerPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E4D277E63C700C5831F /* DataLayerPT.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +62,10 @@
 		44037E1F277C53AE00C5831F /* GFCohesionTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFCohesionTUITests.swift; sourceTree = "<group>"; };
 		44037E21277C53AF00C5831F /* GFCohesionTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFCohesionTUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		44037E2E277C54D400C5831F /* GFController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFController.swift; sourceTree = "<group>"; };
+		44037E31277E14D900C5831F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		44037E35277E30A000C5831F /* DataLayerCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayerCD.swift; sourceTree = "<group>"; };
+		44037E4A277E61F500C5831F /* DataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructures.swift; sourceTree = "<group>"; };
+		44037E4D277E63C700C5831F /* DataLayerPT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayerPT.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +120,10 @@
 				44037DFD277C53AB00C5831F /* SceneDelegate.swift */,
 				44037DFF277C53AB00C5831F /* ViewController.swift */,
 				44037E2E277C54D400C5831F /* GFController.swift */,
+				44037E31277E14D900C5831F /* APIManager.swift */,
+				44037E35277E30A000C5831F /* DataLayerCD.swift */,
+				44037E4D277E63C700C5831F /* DataLayerPT.swift */,
+				44037E4A277E61F500C5831F /* DataStructures.swift */,
 				44037E01277C53AB00C5831F /* Main.storyboard */,
 				44037E07277C53AE00C5831F /* Assets.xcassets */,
 				44037E09277C53AE00C5831F /* LaunchScreen.storyboard */,
@@ -265,10 +281,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44037E32277E14D900C5831F /* APIManager.swift in Sources */,
 				44037E2F277C54D400C5831F /* GFController.swift in Sources */,
 				44037E00277C53AB00C5831F /* ViewController.swift in Sources */,
+				44037E4E277E63C700C5831F /* DataLayerPT.swift in Sources */,
 				44037E06277C53AB00C5831F /* GFCohesionT.xcdatamodeld in Sources */,
 				44037DFC277C53AB00C5831F /* AppDelegate.swift in Sources */,
+				44037E4B277E61F500C5831F /* DataStructures.swift in Sources */,
+				44037E36277E30A000C5831F /* DataLayerCD.swift in Sources */,
 				44037DFE277C53AB00C5831F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44037E33277E14D900C5831F /* APIManager.swift in Sources */,
+				44037E4C277E61F500C5831F /* DataStructures.swift in Sources */,
+				44037E37277E30A000C5831F /* DataLayerCD.swift in Sources */,
+				44037E4F277E63C700C5831F /* DataLayerPT.swift in Sources */,
 				44037E16277C53AE00C5831F /* GFCohesionTTests.swift in Sources */,
 				44037E30277C54D400C5831F /* GFController.swift in Sources */,
 			);
@@ -452,6 +476,8 @@
 				DEVELOPMENT_TEAM = 6G6XD32457;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GFCohesionT/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To Enable Smart Location Features Please allow to use Location Services";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To Enable Smart Location Features Please allow to use Location Services";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -481,6 +507,8 @@
 				DEVELOPMENT_TEAM = 6G6XD32457;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GFCohesionT/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To Enable Smart Location Features Please allow to use Location Services";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To Enable Smart Location Features Please allow to use Location Services";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
