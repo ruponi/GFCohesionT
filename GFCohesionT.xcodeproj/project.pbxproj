@@ -119,11 +119,8 @@
 				44037DFB277C53AB00C5831F /* AppDelegate.swift */,
 				44037DFD277C53AB00C5831F /* SceneDelegate.swift */,
 				44037DFF277C53AB00C5831F /* ViewController.swift */,
-				44037E2E277C54D400C5831F /* GFController.swift */,
-				44037E31277E14D900C5831F /* APIManager.swift */,
-				44037E35277E30A000C5831F /* DataLayerCD.swift */,
-				44037E4D277E63C700C5831F /* DataLayerPT.swift */,
-				44037E4A277E61F500C5831F /* DataStructures.swift */,
+				44037E50277E66A200C5831F /* Geofence */,
+				44037E51277E66CE00C5831F /* API */,
 				44037E01277C53AB00C5831F /* Main.storyboard */,
 				44037E07277C53AE00C5831F /* Assets.xcassets */,
 				44037E09277C53AE00C5831F /* LaunchScreen.storyboard */,
@@ -148,6 +145,33 @@
 				44037E21277C53AF00C5831F /* GFCohesionTUITestsLaunchTests.swift */,
 			);
 			path = GFCohesionTUITests;
+			sourceTree = "<group>";
+		};
+		44037E50277E66A200C5831F /* Geofence */ = {
+			isa = PBXGroup;
+			children = (
+				44037E2E277C54D400C5831F /* GFController.swift */,
+			);
+			path = Geofence;
+			sourceTree = "<group>";
+		};
+		44037E51277E66CE00C5831F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				44037E31277E14D900C5831F /* APIManager.swift */,
+				44037E52277E66E100C5831F /* DataLayer */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		44037E52277E66E100C5831F /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				44037E35277E30A000C5831F /* DataLayerCD.swift */,
+				44037E4D277E63C700C5831F /* DataLayerPT.swift */,
+				44037E4A277E61F500C5831F /* DataStructures.swift */,
+			);
+			path = DataLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
