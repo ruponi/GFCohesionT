@@ -11,13 +11,53 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    var gfController: GFController?
+    var apiManager: APIManager?
+    
+    var currentUser: User?
+    var ourOffice: Office?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        initialization()
         // Override point for customization after application launch.
         return true
     }
 
+    private func initialization(){
+        gfController = GFController()
+        gfController?.delegate = self
+        gfController?.stopAllregions()
+        apiManager = APIManager.init(with: DataLayerCD(context: self.persistentContainer.viewContext))
+        
+        //getting data from our API for user and Office location
+        let queue = DispatchQueue(label: "com.co.queue", attributes: .concurrent)
+        let group = DispatchGroup()
+        
+        queue.async(group: group) {
+            self.apiManager?.getUser(result: { user in
+                self.currentUser = user
+             
+            })
+        }
+        
+        queue.async(group: group) {
+            self.apiManager?.getOffice(result: { office in
+                self.ourOffice = office
+            })
+        }
+        
+        // if all data here then  start monitoring
+        group.notify(queue: queue){
+            guard let office = self.ourOffice else {
+                return
+            }
+            print("all data here")
+            self.gfController?.registerNewRegion(latitude: office.officeLatitude, longitude: office.officeLongitude, radius: 200, regionID: office.officeID)
+        }
+        
+        
+    }
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
@@ -79,3 +119,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+//MARK: GFControllerDelegate
+extension AppDelegate: GFControllerDelegate {
+    func didEnterRegion(_ regionID: String) {
+        guard let user = self.currentUser else {
+            return
+        }
+        apiManager?.submitStatus(for: user.userID, status: .enter, regionID: regionID) { result in
+            print("user entered to region")
+        }
+        
+    }
+    
+    func didExitRegion(_ regionID: String) {
+        guard let user = self.currentUser else {
+            return
+        }
+        
+        apiManager?.submitStatus(for: user.userID, status: .exit, regionID: regionID) { result in
+            print("user exit from region" )
+        }
+       
+    }
+    
+    
+}
