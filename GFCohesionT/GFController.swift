@@ -7,11 +7,10 @@
 
 import Foundation
 import CoreLocation
-
 ///GFController Delegate protocol
 protocol GFControllerDelegate {
-    func didEnterRegion(_ region: CLRegion)
-    func didExitRegion(_ region: CLRegion)
+    func didEnterRegion(_ regionID: String)
+    func didExitRegion(_ regionID: String)
 }
 
 /// GFController Handle geaofence feature.
@@ -68,11 +67,11 @@ class GFController: NSObject {
     
     // TODO: As Apple allow to monitor just 20 different regions then we create feature for dinamicaly uploaded neareds regions with significant location
     ///Register New Region for Monitoring.
-    public func registerGFRegion(with regionID: String,
-                                 region: CLCircularRegion) {
+    public func registerGFRegion(region: CLCircularRegion) {
+        
         // old regions with same regionID will be automathicaly updated
         locationManager.startMonitoring(for: region)
-        locationManager.requestState(for: region)
+       // locationManager.requestState(for: region)
     }
     
     ///Remove region with ID
@@ -85,6 +84,26 @@ class GFController: NSObject {
         locationManager.stopMonitoring(for: region)
     }
     
+    ///clear all regions
+    public func stopAllregions(){
+        for region in locationManager.monitoredRegions {
+        locationManager.stopMonitoring(for: region)
+        }
+    }
+    
+    //it should work without core location in parent classes
+    ///New geofencing region registration
+    @discardableResult public func registerNewRegion(latitude: Double,
+                                  longitude: Double,
+                                  radius: Double,
+                                  regionID: String) -> CLCircularRegion {
+        let centerCoordinate = CLLocationCoordinate2D.init(latitude: CLLocationDegrees(latitude), longitude: CLLocationDegrees(longitude))
+        let region = CLCircularRegion.init(center: centerCoordinate, radius: CLLocationDistance(radius), identifier: regionID)
+        region.notifyOnEntry = true
+        region.notifyOnExit = true
+        registerGFRegion(region: region)
+        return region
+    }
 }
 
 
@@ -92,11 +111,29 @@ class GFController: NSObject {
 extension GFController: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        delegate?.didEnterRegion(region)
+        let regionID = region.identifier
+        delegate?.didEnterRegion(regionID)
     }
     
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
-        delegate?.didExitRegion(region)
+        let regionID = region.identifier
+        delegate?.didExitRegion(regionID)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didDetermineState state: CLRegionState, for region: CLRegion) {
+        let regionID = region.identifier
+        if state == .inside {
+            print("inside")
+            delegate?.didEnterRegion(regionID)
+        } else  if state == .outside {
+            print("outside")
+            delegate?.didExitRegion(regionID)
+        }
+     
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didStartMonitoringFor region: CLRegion) {
+        print("START")
     }
 }
 //MARK: -
