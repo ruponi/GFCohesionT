@@ -18,17 +18,20 @@ protocol GFControllerDelegate {
 ///
 class GFController: NSObject {
     
-    private var locationManager: CLLocationManager?
-    
+    /// Location manager
+    private var locationManager: CLLocationManager
+    /// Delegate of the GFController
     public var delegate: GFControllerDelegate?
-
+     
+    override init() {
+        self.locationManager = CLLocationManager.init()
+        super.init()
+        self.enableLocationServices()
+    }
+    
     ///Enable location service  for geofensing. Request Permission
-    public func enableLocationServices()
+    private func enableLocationServices()
     {
-        guard let locationManager = self.locationManager else {
-            return
-        }
-        
         let authorizationStatus: CLAuthorizationStatus
         
         locationManager.delegate = self
@@ -62,9 +65,30 @@ class GFController: NSObject {
         }
         
     }
+    
+    // TODO: As Apple allow to monitor just 20 different regions then we create feature for dinamicaly uploaded neareds regions with significant location
+    ///Register New Region for Monitoring.
+    public func registerGFRegion(with regionID: String,
+                                 region: CLCircularRegion) {
+        // old regions with same regionID will be automathicaly updated
+        locationManager.startMonitoring(for: region)
+        locationManager.requestState(for: region)
+    }
+    
+    ///Remove region with ID
+    public func removeGFRegion(with regionID: String) {
+        guard let region  = (locationManager.monitoredRegions.first(where: { region in
+            return region.identifier == regionID
+        })) else {
+            return
+        }
+        locationManager.stopMonitoring(for: region)
+    }
+    
 }
 
-//MARK: - CLLocationManagerDelegate -
+
+//MARK: - CLLocationManagerDelegate Implemetation
 extension GFController: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
@@ -73,5 +97,14 @@ extension GFController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         delegate?.didExitRegion(region)
+    }
+}
+//MARK: -
+
+extension CLLocationManager {
+    func containsGFRegion(with regionID: String) -> Bool {
+      return self.monitoredRegions.contains { region in
+          return  region.identifier == regionID
+        }
     }
 }
