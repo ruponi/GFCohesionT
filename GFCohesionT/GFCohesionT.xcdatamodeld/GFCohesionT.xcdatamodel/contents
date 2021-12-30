@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="OfficeDT" representedClassName=".OfficeDT" syncable="YES" codeGenerationType="class">
+        <attribute name="officeID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="officeLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="officeLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="officeName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="OfficeVolumeDT" representedClassName=".OfficeVolumeDT" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="officeID" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="statusChanged" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="userID" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="UserDT" representedClassName=".UserDT" syncable="YES" codeGenerationType="class">
+        <attribute name="userID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="userName" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="UserDT" positionX="-257.18798828125" positionY="-110.9176025390625" width="128" height="73"/>
+        <element name="OfficeDT" positionX="-257.003173828125" positionY="-14.16574096679688" width="128" height="103"/>
+        <element name="OfficeVolumeDT" positionX="-32.538818359375" positionY="-90.27227783203125" width="128" height="118"/>
+    </elements>
 </model>
