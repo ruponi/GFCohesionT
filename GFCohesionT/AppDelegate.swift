@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private func initialization(){
+        FirebaseApp.configure()
         gfController = GFController()
         gfController?.delegate = self
         gfController?.stopAllregions()
@@ -54,7 +56,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("all data here")
             self.gfController?.registerNewRegion(latitude: office.officeLatitude, longitude: office.officeLongitude, radius: 200, regionID: office.officeID)
         }
-        
+     //   let numbers = [0]
+     //   let _ = numbers[1]
         
     }
     

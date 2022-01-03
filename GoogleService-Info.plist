@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>358491220370-qms0j7c5q9sk8pgptlqm9vo5djt701ld.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.358491220370-qms0j7c5q9sk8pgptlqm9vo5djt701ld</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD2HGkmItt_3IG5L9YOYn0XrIXeV0vdXcc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>358491220370</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>rst.cohesion.com.GFCohesionT</string>
+	<key>PROJECT_ID</key>
+	<string>cohesiontest-ed7e6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cohesiontest-ed7e6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:358491220370:ios:56cee5ca98d6ca1201394b</string>
+</dict>
+</plist>

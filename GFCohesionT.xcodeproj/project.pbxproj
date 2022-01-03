@@ -28,6 +28,9 @@
 		44037E4F277E63C700C5831F /* DataLayerPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E4D277E63C700C5831F /* DataLayerPT.swift */; };
 		44505CAF2782370200B360AF /* GFCohesionT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44037E04277C53AB00C5831F /* GFCohesionT.xcdatamodeld */; };
 		44505CB127823B3600B360AF /* GFCohesionT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44037E04277C53AB00C5831F /* GFCohesionT.xcdatamodeld */; };
+		44505CB32782F2EA00B360AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44505CB22782F2E900B360AF /* GoogleService-Info.plist */; };
+		44505CB62782F4B300B360AF /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 44505CB52782F4B300B360AF /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		44505CB82782F4B300B360AF /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 44505CB72782F4B300B360AF /* FirebaseCrashlytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,7 @@
 		44037E4A277E61F500C5831F /* DataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructures.swift; sourceTree = "<group>"; };
 		44037E4D277E63C700C5831F /* DataLayerPT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayerPT.swift; sourceTree = "<group>"; };
 		44505CAE277F670600B360AF /* Locations.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Locations.gpx; sourceTree = "<group>"; };
+		44505CB22782F2E900B360AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44505CB62782F4B300B360AF /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				44505CB82782F4B300B360AF /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +104,7 @@
 		44037DEF277C53AA00C5831F = {
 			isa = PBXGroup;
 			children = (
+				44505CB22782F2E900B360AF /* GoogleService-Info.plist */,
 				44505CAE277F670600B360AF /* Locations.gpx */,
 				44037DFA277C53AB00C5831F /* GFCohesionT */,
 				44037E14277C53AE00C5831F /* GFCohesionTTests */,
@@ -187,12 +194,17 @@
 				44037DF4277C53AA00C5831F /* Sources */,
 				44037DF5277C53AA00C5831F /* Frameworks */,
 				44037DF6277C53AA00C5831F /* Resources */,
+				44505CB92782F61B00B360AF /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GFCohesionT;
+			packageProductDependencies = (
+				44505CB52782F4B300B360AF /* FirebaseAnalyticsWithoutAdIdSupport */,
+				44505CB72782F4B300B360AF /* FirebaseCrashlytics */,
+			);
 			productName = GFCohesionT;
 			productReference = 44037DF8277C53AB00C5831F /* GFCohesionT.app */;
 			productType = "com.apple.product-type.application";
@@ -265,6 +277,9 @@
 				Base,
 			);
 			mainGroup = 44037DEF277C53AA00C5831F;
+			packageReferences = (
+				44505CB42782F4B300B360AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 44037DF9277C53AB00C5831F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -282,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44037E0B277C53AE00C5831F /* LaunchScreen.storyboard in Resources */,
+				44505CB32782F2EA00B360AF /* GoogleService-Info.plist in Resources */,
 				44037E08277C53AE00C5831F /* Assets.xcassets in Resources */,
 				44037E03277C53AB00C5831F /* Main.storyboard in Resources */,
 			);
@@ -302,6 +318,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44505CB92782F61B00B360AF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		44037DF4277C53AA00C5831F /* Sources */ = {
@@ -501,6 +537,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 6G6XD32457;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GFCohesionT/Info.plist;
@@ -692,6 +729,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		44505CB42782F4B300B360AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		44505CB52782F4B300B360AF /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44505CB42782F4B300B360AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		44505CB72782F4B300B360AF /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44505CB42782F4B300B360AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		44037E04277C53AB00C5831F /* GFCohesionT.xcdatamodeld */ = {
