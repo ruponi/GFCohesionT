@@ -22,3 +22,7 @@ public struct Office {
 enum GFuserStatus: Int {
     case enter, exit
 }
+
+enum LOGEvents: String {
+    case startMonitoring, exitRegion, enterRegion
+}

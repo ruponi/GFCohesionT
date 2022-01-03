@@ -7,7 +7,9 @@
 
 import Foundation
 import CoreLocation
-///GFController Delegate protocol
+import FirebaseAnalytics
+
+//GFController Delegate protocol
 protocol GFControllerDelegate {
     func didEnterRegion(_ regionID: String)
     func didExitRegion(_ regionID: String)
@@ -113,20 +115,34 @@ extension GFController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
         let regionID = region.identifier
         delegate?.didEnterRegion(regionID)
+        
+        //For Analytics we need to create custom class and implement all needed stuff inside of this class
+        Analytics.logEvent(LOGEvents.enterRegion.rawValue , parameters: [
+            "regionID": region.identifier as NSObject
+        ])
     }
     
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         let regionID = region.identifier
         delegate?.didExitRegion(regionID)
+        Analytics.logEvent(LOGEvents.exitRegion.rawValue , parameters: [
+            "regionID": region.identifier as NSObject
+        ])
     }
     
     func locationManager(_ manager: CLLocationManager, didDetermineState state: CLRegionState, for region: CLRegion) {
         let regionID = region.identifier
         if state == .inside {
             print("inside")
+            Analytics.logEvent(LOGEvents.enterRegion.rawValue , parameters: [
+                "regionID": region.identifier as NSObject
+            ])
             delegate?.didEnterRegion(regionID)
         } else  if state == .outside {
             print("outside")
+            Analytics.logEvent(LOGEvents.exitRegion.rawValue , parameters: [
+                "regionID": region.identifier as NSObject
+            ])
             delegate?.didExitRegion(regionID)
         }
      
@@ -134,6 +150,10 @@ extension GFController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didStartMonitoringFor region: CLRegion) {
         print("START")
+        
+        Analytics.logEvent(LOGEvents.startMonitoring.rawValue , parameters: [
+            "regionID": region.identifier as NSObject
+        ])
     }
 }
 //MARK: -

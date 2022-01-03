@@ -50,10 +50,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // if all data here then  start monitoring
         group.notify(queue: queue){
-            guard let office = self.ourOffice else {
+            guard let office = self.ourOffice, let user = self.currentUser else {
                 return
             }
             print("all data here")
+            Crashlytics.crashlytics().setUserID(user.userID)
             self.gfController?.registerNewRegion(latitude: office.officeLatitude, longitude: office.officeLongitude, radius: 200, regionID: office.officeID)
         }
      //   let numbers = [0]
