@@ -23,7 +23,15 @@ class APIManager {
                              result: @escaping (Bool)->() ) {
         
         self.dataLayer.submitStatus(userID: userID, status: status, regionID: regionID){ results  in
-             result(results)
+            switch results {
+            case .success(_):
+                result(true)
+                break
+            case .failure(_):
+                result(false)
+                break
+            }
+             
              
         }
        

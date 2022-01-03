@@ -23,7 +23,7 @@ class DataLayerCD: DataLayerPT {
     func submitStatus(userID: String,
                       status: GFuserStatus,
                       regionID: String,
-                      result: @escaping (Bool) -> ()) {
+                      completion: @escaping (Result<Bool,Error>) -> ()) {
         var officeVolume: OfficeVolumeDT!
         DispatchQueue.global().async {
         let fetchOffice: NSFetchRequest<OfficeVolumeDT> = OfficeVolumeDT.fetchRequest()
@@ -45,15 +45,23 @@ class DataLayerCD: DataLayerPT {
             officeVolume.statusChanged = Date()
         }
 
-            try? self.context.save()
+            do {
+             try self.context.save()
             DispatchQueue.main.async {
-                result(true)
+                completion(Result.success(true))
                 print ("status submited to DB")
+            }
+            }
+            catch {
+                DispatchQueue.main.async {
+                    completion(Result.failure(error))
+                    print ("status submited to DB")
+                }
             }
         }
     }
     
-    // This is the fake functions which not required for this test task
+    // This is the fake functions which is not required for this test task
     // but just demonstrate what we need to handle
     func getUser(with userID: String,
                  result: @escaping (User?) -> ()) {

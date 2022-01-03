@@ -11,7 +11,6 @@
 		44037DFE277C53AB00C5831F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037DFD277C53AB00C5831F /* SceneDelegate.swift */; };
 		44037E00277C53AB00C5831F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037DFF277C53AB00C5831F /* ViewController.swift */; };
 		44037E03277C53AB00C5831F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44037E01277C53AB00C5831F /* Main.storyboard */; };
-		44037E06277C53AB00C5831F /* GFCohesionT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44037E04277C53AB00C5831F /* GFCohesionT.xcdatamodeld */; };
 		44037E08277C53AE00C5831F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44037E07277C53AE00C5831F /* Assets.xcassets */; };
 		44037E0B277C53AE00C5831F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44037E09277C53AE00C5831F /* LaunchScreen.storyboard */; };
 		44037E16277C53AE00C5831F /* GFCohesionTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E15277C53AE00C5831F /* GFCohesionTTests.swift */; };
@@ -27,6 +26,8 @@
 		44037E4C277E61F500C5831F /* DataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E4A277E61F500C5831F /* DataStructures.swift */; };
 		44037E4E277E63C700C5831F /* DataLayerPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E4D277E63C700C5831F /* DataLayerPT.swift */; };
 		44037E4F277E63C700C5831F /* DataLayerPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44037E4D277E63C700C5831F /* DataLayerPT.swift */; };
+		44505CAF2782370200B360AF /* GFCohesionT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44037E04277C53AB00C5831F /* GFCohesionT.xcdatamodeld */; };
+		44505CB127823B3600B360AF /* GFCohesionT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44037E04277C53AB00C5831F /* GFCohesionT.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		44037E35277E30A000C5831F /* DataLayerCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayerCD.swift; sourceTree = "<group>"; };
 		44037E4A277E61F500C5831F /* DataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructures.swift; sourceTree = "<group>"; };
 		44037E4D277E63C700C5831F /* DataLayerPT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayerPT.swift; sourceTree = "<group>"; };
+		44505CAE277F670600B360AF /* Locations.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Locations.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		44037DEF277C53AA00C5831F = {
 			isa = PBXGroup;
 			children = (
+				44505CAE277F670600B360AF /* Locations.gpx */,
 				44037DFA277C53AB00C5831F /* GFCohesionT */,
 				44037E14277C53AE00C5831F /* GFCohesionTTests */,
 				44037E1E277C53AE00C5831F /* GFCohesionTUITests */,
@@ -308,8 +311,8 @@
 				44037E32277E14D900C5831F /* APIManager.swift in Sources */,
 				44037E2F277C54D400C5831F /* GFController.swift in Sources */,
 				44037E00277C53AB00C5831F /* ViewController.swift in Sources */,
+				44505CB127823B3600B360AF /* GFCohesionT.xcdatamodeld in Sources */,
 				44037E4E277E63C700C5831F /* DataLayerPT.swift in Sources */,
-				44037E06277C53AB00C5831F /* GFCohesionT.xcdatamodeld in Sources */,
 				44037DFC277C53AB00C5831F /* AppDelegate.swift in Sources */,
 				44037E4B277E61F500C5831F /* DataStructures.swift in Sources */,
 				44037E36277E30A000C5831F /* DataLayerCD.swift in Sources */,
@@ -321,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44505CAF2782370200B360AF /* GFCohesionT.xcdatamodeld in Sources */,
 				44037E33277E14D900C5831F /* APIManager.swift in Sources */,
 				44037E4C277E61F500C5831F /* DataStructures.swift in Sources */,
 				44037E37277E30A000C5831F /* DataLayerCD.swift in Sources */,
